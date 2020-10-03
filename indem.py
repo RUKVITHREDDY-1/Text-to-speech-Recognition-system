@@ -1,7 +1,7 @@
-from gtts import gtts
+from gtts import gTTS
 import os
-my text=raw_input("Enter the text to be converted")
-language = 'en'
-myonj = gTTS(text=my text, lang=language,  slow=False)
-n=input("enter the name with which it should be saved")
-myobj.save((&n).mp3)
+file = open("draft.txt", "r").read().replace("\n", " ")
+language = input('enter the language to be converted')
+speech = gTTS(text = str(enter the file name to be converted), lang = language, slow = False)
+speech.save("voice.mp3")
+os.system("start voice.mp3")
